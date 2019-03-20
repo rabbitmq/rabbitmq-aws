@@ -6,12 +6,12 @@ A fork of [gmr/httpc-aws](https://github.com/gmr/httpc-aws) for use in building 
 
 ## Supported Erlang Versions
 
-[Same as RabbitMQ](http://www.rabbitmq.com/which-erlang.html)
+[Same as RabbitMQ](https://www.rabbitmq.com/which-erlang.html)
  
 ## Configuration
 
 Configuration for *rabbitmq-aws* is can be provided in multiple ways. It is designed
-to behave similarly to the [AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+to behave similarly to the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 with respect to providing region and configuration information. Additionally it
 has two methods, ``rabbitmq_aws:set_region/1`` and ``rabbitmq_aws:set_credentials/2``
 to allow for application specific configuration, bypassing the automatic configuration

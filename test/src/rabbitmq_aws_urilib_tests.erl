@@ -15,7 +15,7 @@ build_test_() ->
       ?assertEqual(Expect, Result)
      end},
     {"variation2", fun() ->
-      Expect = "http://www.google.com/search?foo=bar#baz",
+      Expect = "https://www.google.com/search?foo=bar#baz",
       Value = #uri{scheme=http,
                    authority={{undefined, undefined}, "www.google.com", 80},
                    path="/search",
@@ -88,7 +88,7 @@ build_test_() ->
       ?assertEqual(Expect, Result)
      end},
     {"variation10", fun() ->
-      Expect = "http://www.google.com/search?foo#bar",
+      Expect = "https://www.google.com/search?foo#bar",
       Value = #uri{scheme=http,
                    authority={undefined, "www.google.com", undefined},
                    path="/search",
@@ -98,7 +98,7 @@ build_test_() ->
       ?assertEqual(Expect, Result)
      end},
     {"variation11", fun() ->
-      Expect = "http://www.google.com/",
+      Expect = "https://www.google.com/",
       Value = #uri{scheme=http,
                    authority={undefined, "www.google.com", undefined},
                    path=undefined,
@@ -132,7 +132,7 @@ parse_test_() ->
       ?assertEqual(Expect, rabbitmq_aws_urilib:parse(URI))
      end},
     {"variation2", fun() ->
-      URI = "http://www.google.com/search?foo=bar#baz",
+      URI = "https://www.google.com/search?foo=bar#baz",
       Expect = #uri{scheme=http,
                     authority={undefined, "www.google.com", 80},
                     path="/search",
