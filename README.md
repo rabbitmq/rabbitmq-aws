@@ -1,5 +1,12 @@
 # rabbitmq-aws
 
+## This was migrated to https://github.com/rabbitmq/rabbitmq-server
+
+This repository has been moved to the main unified RabbitMQ "monorepo", including all open issues. You can find the source under [/deps/rabbitmq_aws](https://github.com/rabbitmq/rabbitmq-server/tree/master/deps/rabbitmq_aws).
+All issues have been transferred.
+
+## Overview
+
 A fork of [gmr/httpc-aws](https://github.com/gmr/httpc-aws) for use in building RabbitMQ plugins that interact with Amazon Web Services APIs.
 
 [![Build Status](https://travis-ci.org/gmr/rabbitmq-aws.svg?branch=master)](https://travis-ci.org/gmr/rabbitmq-aws)
